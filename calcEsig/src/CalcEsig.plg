@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CalcEsig - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/mexversion.res" /i "\MATLAB6p1\extern\include" /d "_DEBUG" /d "_AFXDLL" "C:\MATLAB6p1\extern\include\mexversion.rc"" 
+Creating temporary file "C:\DOCUME~1\zeekec\LOCALS~1\Temp\RSPAF.tmp" with contents
+[
+/nologo /MD /W3 /Gm /Gi /GX /ZI /Od /I "C:\MATLAB6p1\extern\include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "IBMPC" /D "MSVC" /D "MSWIND" /D "__STDC__" /D "MATLAB_MEX_FILE" /D "NDEBUG" /D "ARRAY_ACCESS_INLINING" /FR"Debug/" /Fp"Debug/CalcEsig.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\MATLAB6p1\work\matlablib\MEXlib\src\ClacEsig\CalcEsig.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\zeekec\LOCALS~1\Temp\RSPAF.tmp" 
+Creating temporary file "C:\DOCUME~1\zeekec\LOCALS~1\Temp\RSPB0.tmp" with contents
+[
+kernel32.lib user32.lib libmx.lib libmex.lib libmatlb.lib libmat.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/CalcEsig.pdb" /debug /machine:I386 /out:"Debug/CalcEsig.dll" /implib:"Debug/CalcEsig.lib" /pdbtype:sept /libpath:"C:\MATLAB6p1\extern\lib\win32\microsoft\msvc60" /export:"mexFunction" 
+.\Debug\CalcEsig.obj
+.\Debug\mexversion.res
+]
+Creating command line "link.exe @C:\DOCUME~1\zeekec\LOCALS~1\Temp\RSPB0.tmp"
+Creating temporary file "C:\DOCUME~1\zeekec\LOCALS~1\Temp\RSPB1.bat" with contents
+[
+@echo off
+copy .\Debug\CalcEsig.dll ..\..\bin\CalcEsig.dll
+]
+Creating command line "C:\DOCUME~1\zeekec\LOCALS~1\Temp\RSPB1.bat"
+Compiling resources...
+Compiling...
+CalcEsig.cpp
+c:\program files\microsoft visual studio\vc98\include\complex(203) : warning C4275: non dll-interface class 'std::_Complex_base<float>' used as base for dll-interface class 'std::complex<float>'
+        c:\program files\microsoft visual studio\vc98\include\complex(203) : see declaration of 'complex<float>'
+c:\program files\microsoft visual studio\vc98\include\complex(216) : warning C4275: non dll-interface class 'std::_Complex_base<double>' used as base for dll-interface class 'std::complex<double>'
+        c:\program files\microsoft visual studio\vc98\include\complex(216) : see declaration of 'complex<double>'
+c:\program files\microsoft visual studio\vc98\include\complex(229) : warning C4275: non dll-interface class 'std::_Complex_base<long double>' used as base for dll-interface class 'std::complex<long double>'
+        c:\program files\microsoft visual studio\vc98\include\complex(229) : see declaration of 'complex<long double>'
+Linking...
+   Creating library Debug/CalcEsig.lib and object Debug/CalcEsig.exp
+<h3>Output Window</h3>
+Performing Custom Build Step on .\Debug\CalcEsig.dll
+        1 file(s) copied.
+
+
+
+<h3>Results</h3>
+CalcEsig.dll - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

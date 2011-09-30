@@ -1,4 +1,4 @@
-function Esig = calcEsig(p,g)
+function Esig = calcEsig_slow(p,g)
 %CALCESIG - Calculates the FROG signal field from the pulse and gate functions
 %
 % Syntax:  Esig = function_name(p,g)
@@ -20,7 +20,7 @@ function Esig = calcEsig(p,g)
 % September 2011; Last revision: 29-Sept-2011
 
 N = length(p);
-if N != length(g)
+if N ~= length(g)
 	error('The pulse field vector and the gate field vector must have the same dimensions.')
 end
 
