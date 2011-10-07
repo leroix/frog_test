@@ -1,6 +1,8 @@
 function [tbp_rms, sig_t, sig_w] = calc_tbp(et, ew)
 %calc_tbp - calculates the root mean square time-bandwidth product of Et
 %
+% Syntax:  [tbp_rms, sig_t, sig_w] = calc_tbp(et, ew)
+%
 % Inputs:
 %    et - complex electric field vs. time
 %    ew - complex electric field vs. frequency
