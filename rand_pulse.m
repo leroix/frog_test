@@ -19,7 +19,7 @@ function [et, ew, tbp_rms] = rand_pulse(tbp, n)
 % email address: jtratner@gatech.edu  
 % Website: http://frog.gatech.edu
 % October 2011; Last revision: 05-Oct-2011
-% REQUIREMENTS: calc_tbp.m
+% REQUIREMENTS: calc_tbp.m, fftc.m, ifftc.m
 
 % choose the best n or take the user's input if available
 debug = 1;

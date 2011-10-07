@@ -1,1 +1,5 @@
 testing the FROG algorithm
+
+Be sure to put the msql-connector-java jar file path in the [matlab dir]\toolbox\local\classpath.txt
+
+May need to type "import com.mysql.jdbc.Driver;" in the matlab prompt to load the driver.
