@@ -1,4 +1,4 @@
-function phiw = GS_algo(It, Sw)
+function phiw = gs_algo(It, Sw)
 
 At = center(quickscale(sqrt(It)),'max');
 Aw = center(quickscale(sqrt(Sw)),'max');
