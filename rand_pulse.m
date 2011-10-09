@@ -1,7 +1,8 @@
 function [et, ew, tbp_rms] = rand_pulse(tbp, n)
 %rand_pulse - returns a random pulse of a given time-bandwidth product
 %
-% Syntax:  [et, ew, tbp_rms] = rand_pulse(tbp, N)
+% Syntax:  [et, ew, tbp_rms] = rand_pulse(tbp)
+%          [et, ew, tbp_rms] = rand_pulse(tbp, n)
 %
 % Inputs:
 %    tbp - Desired time-bandwidth product.
@@ -21,9 +22,9 @@ function [et, ew, tbp_rms] = rand_pulse(tbp, n)
 % October 2011; Last revision: 05-Oct-2011
 % REQUIREMENTS: calc_tbp.m, fftc.m, ifftc.m
 
-% choose the best n or take the user's input if available
 debug = 1;
 
+% choose the best n or take the user's input if available
 n1 = 2^ceil(log2(32*(tbp/.5)^1));
 if n1 > 16384
     n1 = 16384;
